@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-4xl font-light tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-normal tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-medium tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-normal {
+  font-weight: 400 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
